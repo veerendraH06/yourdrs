@@ -1,9 +1,9 @@
 import 'dart:async';
-
 import 'package:YOURDRS_FlutterAPP/blocs/base/base_bloc.dart';
 import 'package:YOURDRS_FlutterAPP/blocs/patient/patient_bloc_event.dart';
 import 'package:YOURDRS_FlutterAPP/blocs/patient/patient_bloc_state.dart';
 import 'package:YOURDRS_FlutterAPP/network/models/appointment.dart';
+
 import 'package:YOURDRS_FlutterAPP/network/services/appointment_service.dart';
 
 class PatientBloc

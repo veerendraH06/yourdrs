@@ -1,6 +1,7 @@
 import 'package:YOURDRS_FlutterAPP/blocs/base/base_bloc_state.dart';
 import 'package:YOURDRS_FlutterAPP/network/models/appointment.dart';
 
+
 class PatientAppointmentBlocState extends BaseBlocState {
   final bool isLoading;
   final String errorMsg;

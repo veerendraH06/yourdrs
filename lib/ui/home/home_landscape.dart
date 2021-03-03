@@ -9,7 +9,6 @@ import 'package:YOURDRS_FlutterAPP/network/models/appointment.dart';
 import 'package:YOURDRS_FlutterAPP/network/services/appointment_service.dart';
 import 'package:YOURDRS_FlutterAPP/ui/home/patient_details.dart';
 import 'package:YOURDRS_FlutterAPP/widget/dropdowns/dictation.dart';
-import 'package:YOURDRS_FlutterAPP/widget/dropdowns/location.dart';
 import 'package:YOURDRS_FlutterAPP/widget/dropdowns/provider.dart';
 import 'package:YOURDRS_FlutterAPP/widget/input_fields/search_bar.dart';
 import 'package:date_picker_timeline/date_picker_widget.dart';
@@ -55,7 +54,8 @@ class _HomeLandScapeState extends State<HomeLandScape> {
         users = usersFromServer;
         filteredUsers = users;
       });
-    });
+    }
+    );
   }
 
   // ignore: missing_return
@@ -141,7 +141,7 @@ class _HomeLandScapeState extends State<HomeLandScape> {
                         children: [
                           Provider(),
                           Dictation(),
-                          Location(),
+                          // Location(),
                           FlatButton(
                             onPressed: () => Navigator.pop(context),
                             // onPressed: ()

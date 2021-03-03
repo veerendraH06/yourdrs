@@ -3,13 +3,15 @@ import 'dart:convert';
 import 'package:YOURDRS_FlutterAPP/blocs/patient/patient_bloc.dart';
 import 'package:YOURDRS_FlutterAPP/blocs/patient/patient_bloc_event.dart';
 import 'package:YOURDRS_FlutterAPP/blocs/patient/patient_bloc_state.dart';
-import 'package:YOURDRS_FlutterAPP/blocs/patient/patient_click_bloc.dart';
+
 import 'package:YOURDRS_FlutterAPP/common/app_colors.dart';
 import 'package:YOURDRS_FlutterAPP/common/app_pop_menu.dart';
 import 'package:YOURDRS_FlutterAPP/network/models/appointment.dart';
+
+
 import 'package:YOURDRS_FlutterAPP/ui/home/patient_details.dart';
 import 'package:YOURDRS_FlutterAPP/widget/dropdowns/dictation.dart';
-import 'package:YOURDRS_FlutterAPP/widget/dropdowns/location.dart';
+
 import 'package:YOURDRS_FlutterAPP/widget/dropdowns/provider.dart';
 import 'package:YOURDRS_FlutterAPP/widget/input_fields/search_bar.dart';
 import 'package:date_picker_timeline/date_picker_widget.dart';
@@ -140,7 +142,7 @@ class _HomePortraitState extends State<HomePortrait> {
                   actions: <Widget>[
                     Provider(),
                     Dictation(),
-                    Location(),
+                    // Location(),
                     FlatButton(
                       onPressed: () => Navigator.pop(context),
                       // onPressed: ()
@@ -227,14 +229,7 @@ class _HomePortraitState extends State<HomePortrait> {
                         },
                       ),
                     ),
-                    // BlocListener<Click_PatientsBloc,BaseBlocState>(listener: (context,state)
-                    // {
-                    //   if(state.props == true)
-                    //   {
-                    //     Navigator.push(context, MaterialPageRoute(builder: (context)=>PatientDetail()));
-                    //   }
-                    // }
-                    // ),
+
                   ],
                 ),
               ),
@@ -367,9 +362,6 @@ class _HomePortraitState extends State<HomePortrait> {
                                                           ),
 
                                                           onTap: () {
-
-
-                                                            // BlocProvider.of<Click_PatientsBloc>(context).add(ClickPatientEvent(users: List users[index]));
 
                                                             Navigator.push(
                                                               context,
